@@ -1,0 +1,17 @@
+﻿Build started 26/01/2016 10:30:06 PM.
+     1>Project "C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Recipe2\Recipe2.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(10): error C2653: 'GameGrid' : is not a class or namespace name
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(10): error C2065: 'Location' : undeclared identifier
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(10): error C2146: syntax error : missing ')' before identifier 'a'
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(10): error C2059: syntax error : ')'
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(11): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(11): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter8\source\recipe2\source.cpp(21): error C2061: syntax error : identifier 'unordered_map'
+     1>Done Building Project "C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Recipe2\Recipe2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.02

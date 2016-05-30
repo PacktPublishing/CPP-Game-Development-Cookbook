@@ -1,0 +1,11 @@
+﻿Build started 12/09/2015 12:37:57 PM.
+     1>Project "C:\Users\Druhin\Desktop\Book\C++Book\C++forGameDevelopment\Book\Chapter5\Source\Recipe8\Recipe8.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AnimatedSprite.cpp
+         AnimatedSprite.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe8\animatedsprite.h(11): fatal error C1083: Cannot open include file: 'Sprite.h': No such file or directory
+     1>Done Building Project "C:\Users\Druhin\Desktop\Book\C++Book\C++forGameDevelopment\Book\Chapter5\Source\Recipe8\Recipe8.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.61

@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter11\source\sendto\source.cpp(54): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: see declaration of 'inet_addr'
+c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter11\source\sendto\source.cpp(81): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+  SendTo.vcxproj -> C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter11\Source\SendTo\Debug\SendTo.exe

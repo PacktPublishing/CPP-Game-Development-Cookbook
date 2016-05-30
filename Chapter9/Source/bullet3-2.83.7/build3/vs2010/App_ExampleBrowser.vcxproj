@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0AA6578D-2132-CE45-8226-C8200D96DABA}</ProjectGuid>
+    <RootNamespace>App_ExampleBrowser</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\x32\Release\App_ExampleBrowser\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">App_ExampleBrowser_vs2010</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\x64\Release\App_ExampleBrowser\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">App_ExampleBrowser_vs2010_x64_release</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\x32\Debug\App_ExampleBrowser\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">App_ExampleBrowser_vs2010_debug</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\x64\Debug\App_ExampleBrowser\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">App_ExampleBrowser_vs2010_x64_debug</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\gwen_vs2010.lib;..\..\bin\OpenGL_Window_vs2010.lib;..\..\bin\BulletSoftBody_vs2010.lib;..\..\bin\BulletInverseDynamicsUtils_vs2010.lib;..\..\bin\BulletInverseDynamics_vs2010.lib;..\..\bin\BulletDynamics_vs2010.lib;..\..\bin\BulletCollision_vs2010.lib;..\..\bin\LinearMath_vs2010.lib;..\..\bin\Bullet3Common_vs2010.lib;opengl32.lib;glu32.lib;..\..\bin\Bullet3OpenCL_clew_vs2010.lib;..\..\bin\Bullet3Dynamics_vs2010.lib;..\..\bin\Bullet3Collision_vs2010.lib;..\..\bin\Bullet3Geometry_vs2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_ExampleBrowser_vs2010.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\gwen_vs2010_x64_release.lib;..\..\bin\OpenGL_Window_vs2010_x64_release.lib;..\..\bin\BulletSoftBody_vs2010_x64_release.lib;..\..\bin\BulletInverseDynamicsUtils_vs2010_x64_release.lib;..\..\bin\BulletInverseDynamics_vs2010_x64_release.lib;..\..\bin\BulletDynamics_vs2010_x64_release.lib;..\..\bin\BulletCollision_vs2010_x64_release.lib;..\..\bin\LinearMath_vs2010_x64_release.lib;..\..\bin\Bullet3Common_vs2010_x64_release.lib;opengl32.lib;glu32.lib;..\..\bin\Bullet3OpenCL_clew_vs2010_x64_release.lib;..\..\bin\Bullet3Dynamics_vs2010_x64_release.lib;..\..\bin\Bullet3Collision_vs2010_x64_release.lib;..\..\bin\Bullet3Geometry_vs2010_x64_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_ExampleBrowser_vs2010_x64_release.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)App_ExampleBrowser_vs2010_debug.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\gwen_vs2010_debug.lib;..\..\bin\OpenGL_Window_vs2010_debug.lib;..\..\bin\BulletSoftBody_vs2010_debug.lib;..\..\bin\BulletInverseDynamicsUtils_vs2010_debug.lib;..\..\bin\BulletInverseDynamics_vs2010_debug.lib;..\..\bin\BulletDynamics_vs2010_debug.lib;..\..\bin\BulletCollision_vs2010_debug.lib;..\..\bin\LinearMath_vs2010_debug.lib;..\..\bin\Bullet3Common_vs2010_debug.lib;opengl32.lib;glu32.lib;..\..\bin\Bullet3OpenCL_clew_vs2010_debug.lib;..\..\bin\Bullet3Dynamics_vs2010_debug.lib;..\..\bin\Bullet3Collision_vs2010_debug.lib;..\..\bin\Bullet3Geometry_vs2010_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_ExampleBrowser_vs2010_debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)App_ExampleBrowser_vs2010_x64_debug.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\clew;..\..\examples\ExampleBrowser;..\..\src;..\..\examples\ThirdPartyLibs;..\..\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\gwen_vs2010_x64_debug.lib;..\..\bin\OpenGL_Window_vs2010_x64_debug.lib;..\..\bin\BulletSoftBody_vs2010_x64_debug.lib;..\..\bin\BulletInverseDynamicsUtils_vs2010_x64_debug.lib;..\..\bin\BulletInverseDynamics_vs2010_x64_debug.lib;..\..\bin\BulletDynamics_vs2010_x64_debug.lib;..\..\bin\BulletCollision_vs2010_x64_debug.lib;..\..\bin\LinearMath_vs2010_x64_debug.lib;..\..\bin\Bullet3Common_vs2010_x64_debug.lib;opengl32.lib;glu32.lib;..\..\bin\Bullet3OpenCL_clew_vs2010_x64_debug.lib;..\..\bin\Bullet3Dynamics_vs2010_x64_debug.lib;..\..\bin\Bullet3Collision_vs2010_x64_debug.lib;..\..\bin\Bullet3Geometry_vs2010_x64_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_ExampleBrowser_vs2010_x64_debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\clew\clew.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\EmptyBrowser.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\EmptyExample.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\ExampleBrowserInterface.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\ExampleEntries.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GL_ShapeDrawer.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\OpenGLExampleBrowser.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\OpenGLGuiHelper.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\GraphingTexture.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\gwenInternalData.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenParameterInterface.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenProfileWindow.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenTextureWindow.h" />
+    <ClInclude Include="..\..\examples\ExampleBrowser\GwenGUISupport\gwenUserInterface.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsClientC_API.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsDirect.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsDirectC_API.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsLoopBack.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsLoopBackC_API.h" />
+    <ClInclude Include="..\..\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
+    <ClInclude Include="..\..\examples\InverseDynamics\InverseDynamicsExample.h" />
+    <ClInclude Include="..\..\examples\BasicDemo\BasicExample.h" />
+    <ClInclude Include="..\..\examples\Tutorial\Dof6ConstraintTutorial.h" />
+    <ClInclude Include="..\..\examples\Tutorial\Tutorial.h" />
+    <ClInclude Include="..\..\examples\Collision\CollisionSdkC_Api.h" />
+    <ClInclude Include="..\..\examples\Collision\CollisionTutorialBullet2.h" />
+    <ClInclude Include="..\..\examples\Collision\Internal\Bullet2CollisionSdk.h" />
+    <ClInclude Include="..\..\examples\Collision\Internal\CollisionSdkInterface.h" />
+    <ClInclude Include="..\..\examples\Collision\Internal\RealTimeBullet3CollisionSdk.h" />
+    <ClInclude Include="..\..\examples\Benchmarks\BenchmarkDemo.h" />
+    <ClInclude Include="..\..\examples\Benchmarks\landscapeData.h" />
+    <ClInclude Include="..\..\examples\Benchmarks\TaruData.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\Common2dCanvasInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonCameraInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonExampleInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonGraphicsAppInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonGUIHelperInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonMultiBodyBase.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonParameterInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonRenderInterface.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonRigidBodyBase.h" />
+    <ClInclude Include="..\..\examples\CommonInterfaces\CommonWindowInterface.h" />
+    <ClInclude Include="..\..\examples\ForkLift\ForkLiftDemo.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportBsp\BspConverter.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportBsp\BspLoader.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportBsp\ImportBspExample.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportBullet\SerializeSetup.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportColladaDemo\btMatrix4x4.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportColladaDemo\ColladaGraphicsInstance.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportColladaDemo\ImportColladaSetup.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportObjDemo\ImportObjExample.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportObjDemo\LoadMeshFromObj.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportSTLDemo\ImportSTLSetup.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportSTLDemo\LoadMeshFromSTL.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\BulletUrdfImporter.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\ConvertRigidBodies2MultiBody.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\ImportURDFSetup.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\MultiBodyCreationInterface.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\ROSURDFImporter.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\URDF2Bullet.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\URDFImporterInterface.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\URDFJointTypes.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\urdfLexicalCast.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\UrdfParser.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\urdfStringSplit.h" />
+    <ClInclude Include="..\..\examples\Importers\ImportURDFDemo\urdf_samples.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletWorldImporter\btWorldImporter.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\bChunk.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\bCommon.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\bDefines.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\bDNA.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\bFile.h" />
+    <ClInclude Include="..\..\Extras\Serialize\BulletFileLoader\btBulletFile.h" />
+    <ClInclude Include="..\..\examples\Planar2D\Planar2D.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\CoordinateSystemDemo.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\RaytracerSetup.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\RenderInstancingDemo.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\TimeSeriesCanvas.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\TimeSeriesExample.h" />
+    <ClInclude Include="..\..\examples\RenderingExamples\TimeSeriesFontData.h" />
+    <ClInclude Include="..\..\examples\VoronoiFracture\btConvexConvexMprAlgorithm.h" />
+    <ClInclude Include="..\..\examples\VoronoiFracture\VoronoiFractureDemo.h" />
+    <ClInclude Include="..\..\examples\SoftDemo\BunnyMesh.h" />
+    <ClInclude Include="..\..\examples\SoftDemo\SoftDemo.h" />
+    <ClInclude Include="..\..\examples\SoftDemo\TorusMesh.h" />
+    <ClInclude Include="..\..\examples\RollingFrictionDemo\RollingFrictionDemo.h" />
+    <ClInclude Include="..\..\examples\FractureDemo\btFractureBody.h" />
+    <ClInclude Include="..\..\examples\FractureDemo\btFractureDynamicsWorld.h" />
+    <ClInclude Include="..\..\examples\FractureDemo\FractureDemo.h" />
+    <ClInclude Include="..\..\examples\DynamicControlDemo\MotorDemo.h" />
+    <ClInclude Include="..\..\examples\Constraints\ConstraintDemo.h" />
+    <ClInclude Include="..\..\examples\Constraints\ConstraintPhysicsSetup.h" />
+    <ClInclude Include="..\..\examples\Constraints\Dof6Spring2Setup.h" />
+    <ClInclude Include="..\..\examples\Constraints\TestHingeTorque.h" />
+    <ClInclude Include="..\..\examples\Vehicles\Hinge2Vehicle.h" />
+    <ClInclude Include="..\..\examples\Raycast\RaytestDemo.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\stb_image\stb_image.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\examples\Utils\b3Clock.h" />
+    <ClInclude Include="..\..\examples\Utils\b3ResourcePath.h" />
+    <ClInclude Include="..\..\examples\GyroscopicDemo\GyroscopicSetup.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom\urdf_parser\include\urdf_parser\urdf_parser.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom_headers\urdf_exception\include\urdf_exception\exception.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom_headers\urdf_model\include\urdf_model\pose.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom_headers\urdf_model\include\urdf_model\model.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom_headers\urdf_model\include\urdf_model\link.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom_headers\urdf_model\include\urdf_model\joint.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\lexical_cast.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\shared_ptr.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\printf_console.h" />
+    <ClInclude Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\string_split.h" />
+    <ClInclude Include="..\..\examples\OpenCL\broadphase\PairBench.h" />
+    <ClInclude Include="..\..\examples\OpenCL\broadphase\pairsKernel.h" />
+    <ClInclude Include="..\..\examples\OpenCL\CommonOpenCL\CommonOpenCLBase.h" />
+    <ClInclude Include="..\..\examples\OpenCL\CommonOpenCL\GpuDemoInternalData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\clew\clew.c">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\Glew\glew.c">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\ExampleEntries.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GL_ShapeDrawer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\main.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\OpenGLExampleBrowser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\OpenGLGuiHelper.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GwenGUISupport\GraphingTexture.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenParameterInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenProfileWindow.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GwenGUISupport\GwenTextureWindow.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ExampleBrowser\GwenGUISupport\gwenUserInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsClientC_API.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsServerExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsClientExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsServer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsServerSharedMemory.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsClientSharedMemory.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsClient.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PosixSharedMemory.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\Win32SharedMemory.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsDirect.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsDirectC_API.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsLoopBack.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsLoopBackC_API.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SharedMemory\PhysicsServerCommandProcessor.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiThreading\MultiThreadingExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiThreading\b3PosixThreadSupport.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiThreading\b3Win32ThreadSupport.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiThreading\b3ThreadSupportInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\InverseDynamics\InverseDynamicsExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\BasicDemo\BasicExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Tutorial\Dof6ConstraintTutorial.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Tutorial\Tutorial.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Collision\CollisionSdkC_Api.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Collision\CollisionTutorialBullet2.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Collision\Internal\Bullet2CollisionSdk.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Collision\Internal\RealTimeBullet3CollisionSdk.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Benchmarks\BenchmarkDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ForkLift\ForkLiftDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportBsp\BspConverter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportBsp\BspLoader.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportBsp\ImportBspExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportBullet\SerializeSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportColladaDemo\ImportColladaSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportObjDemo\ImportObjExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportSTLDemo\ImportSTLSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\ImportURDFSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\ROSURDFImporter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\UrdfParser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bChunk.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bDNA.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bFile.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\btBulletFile.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Planar2D\Planar2D.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\CoordinateSystemDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\RaytracerSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\RenderInstancingDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\TimeSeriesCanvas.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\TimeSeriesExample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RenderingExamples\TimeSeriesFontData.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\VoronoiFracture\btConvexConvexMprAlgorithm.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\VoronoiFracture\VoronoiFractureDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\SoftDemo\SoftDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\RollingFrictionDemo\RollingFrictionDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\FractureDemo\btFractureBody.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\FractureDemo\btFractureDynamicsWorld.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\FractureDemo\FractureDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\DynamicControlDemo\MotorDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Constraints\ConstraintDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Constraints\ConstraintPhysicsSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Constraints\Dof6Spring2Setup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Constraints\TestHingeTorque.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Vehicles\Hinge2Vehicle.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Raycast\RaytestDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiBody\MultiDofDemo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiBody\TestJointTorqueSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiBody\Pendulum.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiBody\MultiBodyConstraintFeedback.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\MultiBody\InvertedPendulumPDControl.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\stb_image\stb_image.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\tinyxml\tinystr.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Utils\b3Clock.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\Utils\b3ResourcePath.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\GyroscopicDemo\GyroscopicSetup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom\urdf_parser\src\pose.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom\urdf_parser\src\model.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom\urdf_parser\src\link.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\urdfdom\urdf_parser\src\joint.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\printf_console.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\ThirdPartyLibs\urdf\boost_replacement\string_split.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\OpenCL\broadphase\PairBench.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\OpenCL\rigidbody\GpuConvexScene.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\examples\OpenCL\rigidbody\GpuRigidBodyDemo.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Extras\Serialize\BulletWorldImporter\CMakeLists.txt" />
+    <None Include="..\..\Extras\Serialize\BulletWorldImporter\premake4.lua" />
+    <None Include="..\..\Extras\Serialize\BulletFileLoader\CMakeLists.txt" />
+    <None Include="..\..\Extras\Serialize\BulletFileLoader\premake4.lua" />
+    <None Include="..\..\examples\SoftDemo\bunny.inl" />
+    <None Include="..\..\examples\SoftDemo\cube.inl" />
+    <None Include="..\..\examples\OpenCL\broadphase\pairsKernel.cl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

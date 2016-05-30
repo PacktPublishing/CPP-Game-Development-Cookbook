@@ -1,0 +1,11 @@
+﻿Build started 26/01/2016 10:30:06 PM.
+     1>Project "C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Recipe6\Recipe6.vcxproj" on node 5 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Debug\Recipe6.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Debug\Recipe6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Debug\Recipe6.lib" /MACHINE:X86 Debug\Source.obj
+     1>MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
+     1>C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Debug\Recipe6.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter8\Source\Chapter8\Recipe6\Recipe6.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.72

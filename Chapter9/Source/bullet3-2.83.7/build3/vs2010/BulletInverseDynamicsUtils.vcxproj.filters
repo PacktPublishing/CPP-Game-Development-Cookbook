@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Extras">
+      <UniqueIdentifier>{A80351A6-6818-8D42-AE3C-D31488C751F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras\InverseDynamics">
+      <UniqueIdentifier>{F75ADAF8-4002-8E41-8867-271058B12B77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Extras\InverseDynamics\btMultiBodyFromURDF.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\btMultiBodyTreeCreator.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\CoilCreator.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\DillCreator.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\IDRandomUtil.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\invdyn_bullet_comparison.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\MultiBodyNameMap.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\MultiBodyTreeCreator.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\MultiBodyTreeDebugGraph.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\SimpleTreeCreator.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extras\InverseDynamics\User2InternalIndex.hpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Extras\InverseDynamics\btMultiBodyTreeCreator.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\CoilCreator.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\DillCreator.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\IDRandomUtil.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\invdyn_bullet_comparison.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\MultiBodyNameMap.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\MultiBodyTreeCreator.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\MultiBodyTreeDebugGraph.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\SimpleTreeCreator.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\InverseDynamics\User2InternalIndex.cpp">
+      <Filter>Extras\InverseDynamics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

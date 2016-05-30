@@ -1,0 +1,19 @@
+﻿  window.c
+  win32_window.c
+  win32_time.c
+  win32_monitor.c
+  win32_joystick.c
+  win32_init.c
+  win32_gamma.c
+  win32_clipboard.c
+  wgl_context.c
+  time.c
+  monitor.c
+  joystick.c
+  input.c
+  init.c
+  gamma.c
+  context.c
+  clipboard.c
+  Generating Code...
+  glfw.vcxproj -> C:\Users\Druhin\Desktop\Book\Book\C++Book\C++forGameDevelopment\Book\Chapter9\Source\Box2D\Box2D\Build\vs2013\bin\x32\Debug\glfw.lib

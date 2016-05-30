@@ -1,0 +1,38 @@
+﻿Build started 12/09/2015 12:37:57 PM.
+     1>Project "C:\Users\Druhin\Desktop\Book\C++Book\C++forGameDevelopment\Book\Chapter5\Source\Recipe1\Recipe9\Recipe9.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Ball.cpp Brick.cpp Entity.cpp Game.cpp Level.cpp Paddle.cpp Source.cpp sprite.cpp
+         sprite.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\sprite.cpp(4): fatal error C1083: Cannot open include file: 'resource.h': No such file or directory
+         Source.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(21): error C2027: use of undefined type 'CLevel'
+                 c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\game.h(17) : see declaration of 'CLevel'
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(21): error C2227: left of '->GetPaddle' must point to class/struct/union/generic type
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(21): error C2227: left of '->SetX' must point to class/struct/union/generic type
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(56): error C2440: '=' : cannot convert from 'const char [17]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(75): error C2664: 'HWND CreateWindowExW(DWORD,LPCWSTR,LPCWSTR,DWORD,int,int,int,int,HWND,HMENU,HINSTANCE,LPVOID)' : cannot convert argument 2 from 'const char [17]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(121): fatal error C1075: end of file found before the left brace '{' at 'c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\source.cpp(88)' was matched
+         Paddle.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\paddle.cpp(4): fatal error C1083: Cannot open include file: 'resource.h': No such file or directory
+         Level.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\level.cpp(288): error C2664: 'BOOL TextOutW(HDC,int,int,LPCWSTR,int)' : cannot convert argument 4 from 'const char *' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         Game.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\game.cpp(105): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)' : cannot convert argument 2 from 'const char [8]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\game.cpp(112): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)' : cannot convert argument 2 from 'const char [7]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         Entity.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\entity.cpp(4): fatal error C1083: Cannot open include file: 'resource.h': No such file or directory
+         Brick.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\brick.cpp(4): fatal error C1083: Cannot open include file: 'resource.h': No such file or directory
+         Ball.cpp
+     1>c:\users\druhin\desktop\book\c++book\c++forgamedevelopment\book\chapter5\source\recipe1\recipe9\ball.cpp(4): fatal error C1083: Cannot open include file: 'resource.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Druhin\Desktop\Book\C++Book\C++forGameDevelopment\Book\Chapter5\Source\Recipe1\Recipe9\Recipe9.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.44

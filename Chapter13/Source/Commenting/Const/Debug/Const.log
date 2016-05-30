@@ -1,0 +1,2 @@
+﻿  Source.cpp
+c:\users\druhin\desktop\book\book\c++book\c++forgamedevelopment\book\chapter13\source\commenting\const\source.cpp(10): error C3490: 'a' cannot be modified because it is being accessed through a const object
