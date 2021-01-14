@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/c-game-development-cookbook/9781785882722)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1785882724).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # C++ Game Development Cookbook
 ####Code files for [C++ Game Development Cookbook](https://www.packtpub.com/game-development/c-game-development-cookbook?utm_source=GitHub&utm_medium=repo&utm_campaign=9781785882722)
 
